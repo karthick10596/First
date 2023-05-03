@@ -1,15 +1,27 @@
 package helloworld;
 
 public class Sample {
+String fname;
+String lname;
 
-	public void test()
-	{
-		System.out.println("Welcome to core java");
-	}
+
+
+	public Sample(String fname, String lname) {
+	super();
+	this.fname = fname;
+	this.lname = lname;
+	
+}
+
+
+
 	public static void main(String[] args) {
-		System.out.println("hello world");
-		Sample jeep=new Sample();
-		jeep.test();
+		Sample sam=new Sample("karthick","bala");
+		System.out.println(sam.fname+sam.lname);
+	
+		
+		
+		
 
 	}
 
